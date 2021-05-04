@@ -1,0 +1,159 @@
+/* Global */
+:root {
+    --darkBlue: #363f5f;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e2e2e2;
+    font-family: Poppins, sans-serif;
+}
+
+.sr-only { /* Trick css para desaparecer com objeto */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container {
+    width: min(90vw, 800px); /* min() pega dois argumentos e aceita o menor */
+    margin: auto;
+}
+/* Global */
+
+/* Titles */
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--darkBlue);
+
+    font-weight: 500;
+}
+/* Titles */
+
+/* Header */
+header {
+    background: #2d4a22;
+    padding: 2rem 0 9rem;
+    text-align: center;
+}
+
+#logo {
+    color:#fff;
+    font-weight: 100;
+}
+/* Header */
+
+/* Balance */
+#balance {
+    margin-top: -4.5rem;
+}
+
+#balance h2 {
+    color: white;
+}
+/* Balance */
+
+/* Cards */
+.card {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+
+    margin-bottom: 2rem;
+    color: var(--darkBlue);
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    margin-top: 1rem;
+}
+
+.card.total {
+    background: #49aa26;
+    color: white;
+}
+/* Cards */
+
+/* Table */
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #6a6f85;
+}
+
+table thead th:first-child,
+table tbody td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead th {
+    background: white;
+    font-weight: normal;
+
+    padding: 1rem 2rem;    
+    text-align: left;
+}
+
+table tr {
+    opacity: 0.7;
+}
+
+table tr:hover {
+    opacity: 1;
+}
+
+table td {
+    background: white;
+
+    font-weight: 400;
+    padding: 1rem 2rem;    
+}
+
+td.description {
+    color: var(--darkBlue);
+}
+
+td.income {
+    color: #12a454;
+}
+
+td.expense {
+     color: #e92929;     
+}
+/* Table */
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 0;
+    padding: 4rem 0 2rem;
+
+    color: var(--darkBlue);
+    opacity: 0.6;
+}
+/* Footer */
+
